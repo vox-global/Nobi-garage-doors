@@ -9,6 +9,7 @@ class HtmlController extends Controller
 {
     function index()
     {
+        redirect(route("admin.home"));
         return view('front.home');
     }
 

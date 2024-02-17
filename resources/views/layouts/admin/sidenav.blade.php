@@ -2,8 +2,8 @@
      <section class="sidebar">
          <div class="my-3 mx-4 text-center ">
              <a href="{{ route('admin.home') }}">
-                 <img src="{{ asset('admin/img/logo.svg') }}" class="hide-on-collapse" alt="SkyFreight">
-                 <img src="{{ asset('admin/img/closed-menu.png') }}" class="show-on-collapse" alt="SkyFreight">
+                 <img src="{{ asset('admin/img/logo.webp') }}" class="hide-on-collapse" alt="Company Logo">
+                 <img src="{{ asset('admin/img/favicon.png') }}" class="show-on-collapse" alt="Company Logo">
              </a>
          </div>
          <ul class="sidebar-menu">
@@ -131,6 +131,35 @@
                      </li>
                  </ul>
              </li>
+
+             <li class="treeview">
+                 <a href="#">
+                     <span class="d-inline-block">
+                         <i class="icon icon-change_history s-18"></i>
+                     </span>
+                     Brands Management
+                     <i class="icon icon-angle-left s-18 pull-right"></i>
+                 </a>
+                 <ul class="treeview-menu" style="display: none;">
+                     <li>
+                         <a href="{{ route('brands-view') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             All Brands
+                         </a>
+                     </li>
+                     <li>
+                         <a href="{{ route('brands-add') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-add"></i>
+                             </span>
+                             Add Brand
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+
              <li class="treeview">
                  <a href="#">
                      <span class="d-inline-block">
@@ -140,22 +169,22 @@
                      <i class="icon icon-angle-left s-18 pull-right"></i>
                  </a>
                  <ul class="treeview-menu" style="display: none;">
-                    <li>
-                        <a href="{{ route('content-homepage') }}">
-                            <span class="d-inline-block">
-                                <i class="icon icon-list4"></i>
-                            </span>
-                            Homepage
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('content-contact') }}">
-                            <span class="d-inline-block">
-                                <i class="icon icon-list4"></i>
-                            </span>
-                            Contact Us
-                        </a>
-                    </li>
+                     <li>
+                         <a href="{{ route('content-homepage') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             Homepage
+                         </a>
+                     </li>
+                     <li>
+                         <a href="{{ route('content-contact') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             Contact Us
+                         </a>
+                     </li>
                  </ul>
              </li>
 

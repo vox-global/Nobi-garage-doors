@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\{
     RightsController,
     AdminController,
     BlogCategoriesController,
+    BrandsController,
     CategoriesController,
     ContentManagementController,
     TagsController,
@@ -71,6 +72,12 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     // TESTIMONIALS MANAGEMENT
     Route::prefix('testimonials')->controller(TestimonialsController::class)->name('testimonials-')->group(function () {
+        include('general_routes.php');
+    });
+
+
+    // BRANDS MANAGEMENT
+    Route::prefix('brands')->controller(BrandsController::class)->name('brands-')->group(function () {
         include('general_routes.php');
     });
 

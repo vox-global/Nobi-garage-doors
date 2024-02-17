@@ -81,7 +81,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Meri Sehat Login</title>
+    <title>Nobi Garage Doors - Login</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('/assets/css/app.css') }}">
     <style>
@@ -103,7 +103,7 @@
         }
 
         .height-full {
-            background-image: url(' {{ asset('admin/img/login_bg.png') }}');
+            background-image: url(' {{ asset('admin/img/login-bg.jpg') }}');
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;
@@ -163,7 +163,7 @@
                     <div class="row">
                         <div class="col-lg-4 mx-md-auto">
                             <div class="text-center">
-                                <img src="{{ asset('admin/img/logo.svg') }}" alt="">
+                                <img src="{{ asset('admin/img/logo.webp') }}" alt="">
                                 <h3 class="mt-2"></h3>
                                 <p class="p-t-b-20"></p>
                             </div>
@@ -189,7 +189,6 @@
                                 </div>
                                 <input type="submit" class="btn btn-success btn-lg btn-block" value="Log In">
                                 
-                                <a href="{{route('signup')}}" class="btn btn-info btn-lg btn-block">Sign Up </a>
                             </form>
                         </div>
                     </div>

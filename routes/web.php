@@ -22,8 +22,8 @@ Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 
 
-Route::get('/signup', [AuthController::class, 'signup'])->name('signup');
-Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
+// Route::get('/signup', [AuthController::class, 'signup'])->name('signup');
+// Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
 
 Route::get('/verify/{id}', [AuthController::class, 'verify'])->name('verify');
 Route::post('/verify/{id}', [AuthController::class, 'verify'])->name('verify');
@@ -50,11 +50,11 @@ Route::get('/dashboard', function () {
 
 
 
-Route::controller(HtmlController::class)->group(function () {
-    Route::get('/', 'index')->name('home');
-    Route::get('about', 'about')->name('about');
-    Route::get('contact', 'contact')->name('contact');
-});
+// Route::controller(HtmlController::class)->group(function () {
+//     Route::get('/', 'index')->name('home');
+//     Route::get('about', 'about')->name('about');
+//     Route::get('contact', 'contact')->name('contact');
+// });
 
 
 

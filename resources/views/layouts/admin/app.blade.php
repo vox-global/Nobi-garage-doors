@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('admin/img/favicon.png') }}" type="image/x-icon">
     <title>Nobi Garage Doors - @yield('page_header')</title>
     <!-- CSS -->
     <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
@@ -227,7 +227,7 @@
                             <div class="mt-1">
                                 <div class="float-left image pr-2">
                                     <img class="user_avatar"
-                                        src="{{ Auth::user()->image ? asset('storage/' . Auth::user()->image) : 'http://xvelopers.com/demos/html/paper-panel/assets/img/dummy/u2.png' }}"
+                                        src="{{asset('admin/img/user_placeholder.jpg')}}"
                                         alt="User Image">
                                 </div>
                                 <div class="float-left info mt-1">
@@ -236,10 +236,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="dropdown custom-dropdown notifications-menu">
+                        {{-- <li class="dropdown custom-dropdown notifications-menu">
                             <a href="#" class=" nav-link" data-toggle="dropdown" aria-expanded="false">
                                 <i class="icon-notifications " style="color: white"></i>
-                                {{-- <span class="badge badge-danger badge-mini rounded-circle">4</span> --}}
+                                <span class="badge badge-danger badge-mini rounded-circle">4</span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li class="header">You have
@@ -272,7 +272,7 @@
                                 </li>
                                 <li class="footer p-2 text-center"><a href="#"></a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                         {{-- <li>
                             <a class="nav-link " data-toggle="collapse" data-target="#navbarToggleExternalContent"
                                 aria-controls="navbarToggleExternalContent" aria-expanded="false"

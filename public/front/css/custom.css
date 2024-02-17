@@ -1,0 +1,34 @@
+.header__menu--link {
+  color: #000000;
+  font-weight: 500;
+}
+
+section.shipping__section {
+  background: url(../img/banner/iconbox-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shipping__style2--inner {
+  padding: 0;
+  border: 0;
+}
+
+.shipping__style2--items {
+  padding: 0;
+  margin: 0;
+}
+
+.shipping__style2--items::before {
+  background: none;
+}
+
+.shipping__style2--content__title {
+  color: white;
+}
+
+.shipping__style2--content__desc {
+  font-size: 1.2rem;
+  color: white;
+}

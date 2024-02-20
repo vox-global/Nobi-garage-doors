@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/garagedoor/public_html/nobi_custom
+    - /bin/cp -R images $DEPLOYPATH

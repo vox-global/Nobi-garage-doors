@@ -50,11 +50,18 @@ Route::get('/dashboard', function () {
 
 
 
-// Route::controller(HtmlController::class)->group(function () {
-//     Route::get('/', 'index')->name('home');
-//     Route::get('about', 'about')->name('about');
-//     Route::get('contact', 'contact')->name('contact');
-// });
+Route::controller(HtmlController::class)->group(function () {
+    Route::get('/', 'index')->name('home');
+    Route::get('services/installation', 'serviceInstallation')->name('service-installation');
+    Route::get('services/repair', 'serviceRepair')->name('service-repair');
+    Route::get('supply', 'supply')->name('supply');
+    Route::get('projects', 'projects')->name('projects');
+    Route::get('blogs', 'blogs')->name('blogs');
+    Route::get('contact-us', 'contact')->name('contact');
+
+    
+    Route::get('about', 'about')->name('about');
+});
 
 
 

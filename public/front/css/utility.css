@@ -1,0 +1,27 @@
+.f-red {
+    color: #A50000;
+}
+
+.s-bold {
+    font-weight: 600;
+}
+
+.f-black {
+    color: #000000;
+}
+
+.bg-red {
+    background-color: #A50000;
+}
+
+.f-white {
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+}

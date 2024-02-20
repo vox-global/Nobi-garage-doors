@@ -1,0 +1,836 @@
+/* Additional */
+@media only screen and (max-width: 320px) {
+  section.production.bg-red.sec-padding {
+    margin-top: 0px !important;
+  }
+
+  .navbar-expand-lg {
+    padding-bottom: 50px !important;
+  }
+
+  button.navbar-toggler {
+    margin-top: 30px;
+  }
+
+  a.btn.btn-regular {
+    font-size: 12px;
+  }
+
+  section.cms span.shadowy {
+    box-shadow: 6px 3px 3px 0px #573131;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+
+  .logo {
+    height: 40px !important ;
+  }
+  .navbar > .container {
+    align-items: flex-end !important;
+  }
+  section.banner-home {
+    padding-top: 0px !important;
+  }
+
+  header {
+    padding-bottom: 0px !important;
+  }
+}
+
+/* /* / For mobile phones: / */
+@media only screen and (max-width: 767px) {
+  section.banner-home {
+    height: auto !important;
+  }
+
+  .img-sec {
+    height: 250px !important;
+  }
+
+  section.production .row.production-row {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  video.garage-video {
+    padding: 0px 20px;
+  }
+
+  section.production.bg-red.sec-padding {
+    width: 80vw;
+    margin-top: -50px;
+    position: relative;
+    padding: 50px 0px;
+  }
+
+  section.home-form {
+    padding: 50px 20px;
+  }
+
+  section.home-form .form-group {
+    width: 100%;
+  }
+
+  section.home-form button.btn.btn-nav-outer {
+    width: 100%;
+  }
+
+  section.home-form .row {
+    gap: 30px;
+  }
+
+  section.what-we-do {
+    padding-top: 0 !important;
+  }
+  section.what-we-do .row {
+    gap: 10vh;
+    padding: 0px 20px;
+  }
+  section.who-we-are .row {
+    /* gap:50px; */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  section.where-we-work .row {
+    gap: 10vh;
+    padding: 0px 20px !important;
+  }
+
+  a.btn.btn-nav-outer.selection {
+    margin: 0px !important;
+  }
+
+  .box-1 h6,
+  .box-2 h6,
+  .box-3 h6 {
+    font-size: 11px;
+  }
+
+  .img-inner {
+    width: 150px;
+    height: 50px;
+  }
+
+  section.cms {
+    padding: 50px 20px;
+  }
+
+  section.cms span.rotate {
+    rotate: -22deg;
+    font-size: 11px !important;
+    padding: 2px !important;
+  }
+
+  section.cms .original-price {
+    font-size: 11px;
+  }
+
+  h1.sales-price.f-white {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  section.cms .price-tag {
+    padding: 4px !important;
+  }
+
+  .promotion-banner {
+    padding-bottom: 25px;
+  }
+
+  section.testimonial {
+    padding: 50px 20px;
+  }
+
+  section.best .row.production-row {
+    gap: 20px;
+  }
+
+  footer {
+    padding: 50px 20px;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  .footer-sec {
+    padding: 25px 20px;
+  }
+
+  footer p.py-5.w-300 {
+    padding: 25px 0px !important;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    visibility: visible;
+    transition: none;
+    margin-top: 10px;
+  }
+
+  .box-2 {
+    margin-left: 180px;
+  }
+
+  nav.navbar.navbar-expand-lg.navbar-light.bg-transparent {
+    padding: 0px 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.banner-home .row > .col-lg-6 {
+    padding-bottom: 50px !important;
+  }
+
+  img.banner-side {
+    padding: 50px 20px;
+  }
+
+  section.banner-home.banner-installation.garage-repair {
+    height: auto !important;
+  }
+
+  .banner-installation {
+    height: auto !important;
+  }
+
+  section.counter {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .counter-item {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0px;
+  }
+
+  .counter-1 {
+    display: flex;
+  }
+
+  section.banner-home .row .container {
+    font-family: "Montserrat", sans-serif;
+    padding-left: 15%;
+    color: #fff;
+    margin-top: 0px;
+    padding: 0px 20px;
+  }
+
+  .counter-1 {
+    display: flex;
+    padding-left: 70px !important;
+  }
+
+  section,
+  header,
+  footer {
+    overflow: hidden;
+    /* padding: 50px 20px !important; */
+  }
+
+  .inner-banner-para {
+    font-size: 16px;
+  }
+  .p-value-inner-service {
+    font-size: 17px;
+  }
+  img.prod-img {
+    width: fit-content;
+    height: 300px;
+  }
+  .product-images > .row {
+    gap: 20px;
+  }
+
+  .heading-value-inner-msg {
+    text-align: start;
+    font-weight: 600;
+  }
+
+  .col-lg-6.msg-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  div#navbarNav {
+    padding-top: 20px;
+  }
+
+  h1.f-black.pt-5 {
+    font-size: 25px !important;
+    /* padding-bottom: 10px; */
+    padding: 0;
+  }
+
+  .supply-section a.btn {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .trusted-brand .owl-carousel .owl-item img {
+    display: block;
+    width: 100% !important;
+    padding-top: 20px;
+  }
+
+  .contact-box-2.box-shadow {
+    float: left;
+  }
+
+  section.value .row {
+    gap: 50px;
+  }
+
+  .additional-map {
+    display: none;
+  }
+
+  section.where-we-work .box-3 {
+    display: none;
+  }
+
+  img.installation-services-img {
+    width: fit-content;
+    height: 400px;
+  }
+
+  .door-stop-box.py-5 {
+    padding: 25px 0px !important;
+  }
+
+  .item-text {
+    font-size: 15px;
+  }
+}
+/* mobile phone responsive end */
+
+/* / For 1366 Resolution /
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  / working /
+
+} */
+
+/* additional 991px */
+@media only screen and (max-width: 991px) {
+  header a.btn.btn-regular.nav {
+    display: none;
+  }
+
+  .logo {
+    max-width: 65% !important;
+  }
+
+  .counter-item {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .counter-item.counter-1 {
+    padding-left: 70px;
+  }
+
+  section.counter .row {
+    gap: 20px;
+  }
+
+  img.installation-services-img {
+    width: fit-content;
+  }
+
+  section.services .row {
+    justify-content: flex-start;
+  }
+  a.btn.btn-regular.services-btn {
+    width: 100%;
+  }
+  .banner-installation {
+    height: 70vh !important;
+  }
+
+  img.prod-img {
+    width: inherit;
+  }
+
+  .product-images .row {
+    gap: 30px;
+  }
+
+  .col-lg-6.msg-box {
+    align-items: flex-start;
+  }
+
+  .banner-home-inner-col {
+    padding-top: 50px;
+  }
+
+  p.card-text {
+    padding: 50px 0px;
+  }
+  .supply-page {
+    padding-bottom: 50px;
+  }
+
+  .contact-box-2.box-shadow {
+    float: left;
+  }
+
+  section.value .row {
+    gap: 50px;
+  }
+}
+
+/* / For tablets: / */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  section {
+    overflow: hidden;
+  }
+
+  section,
+  header,
+  footer {
+    overflow: hidden;
+  }
+
+  section.banner-home {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    padding: 50px 20px;
+  }
+
+  nav.navbar.navbar-expand-lg.navbar-light.bg-transparent {
+    padding: 0px 20px;
+    padding-bottom: 0px !important;
+  }
+
+  a.btn.btn-nav-outer.selection {
+    font-size: 11px;
+    margin: 0 !important;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    visibility: visible;
+    transition: none;
+    margin-top: 10px;
+    width: 18vw;
+  }
+
+  section.production.bg-red.sec-padding {
+    margin-top: -100px;
+  }
+
+  .row.production-row {
+    gap: 50px;
+  }
+
+  section.banner-home .row .container {
+    padding-top: 0px !important;
+  }
+
+  .col-lg-6.banner-side-img-home {
+    padding-top: 0px !important;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    visibility: visible;
+    transition: none;
+    margin-top: 10px;
+    width: 25vw;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    visibility: visible;
+    transition: none;
+    margin-top: 30px;
+    width: 12vw;
+  }
+
+  section.home-form .form-group {
+    width: 100%;
+  }
+
+  section.home-form .row {
+    gap: 30px;
+  }
+
+  section.home-form button.btn.btn-nav-outer {
+    width: 100%;
+  }
+
+  .box-1 {
+    margin-left: 50px;
+    width: fit-content;
+  }
+
+  .box-2 {
+    margin-left: 300px;
+    width: fit-content;
+  }
+
+  .box-3 {
+    display: none;
+  }
+  .content-work {
+    padding-bottom: 50px;
+  }
+
+  section.what-we-do .inner-para {
+    padding-bottom: 50px;
+  }
+
+  footer hr {
+    display: none !important;
+  }
+
+  .footer-sec {
+    padding: 30px 0px;
+  }
+
+  .supply-section a.btn {
+    font-size: 13px;
+  }
+
+  section.banner-home.banner-installation.garage-repair {
+    height: auto !important;
+  }
+  section.banner-home {
+    padding-top: 12vh;
+    height: auto !important;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  .box-1,
+  .box-2,
+  .box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: rgb(255 255 255 / 22%);
+    justify-content: flex-start;
+    align-content: center;
+    position: absolute;
+    padding-top: 10px;
+    visibility: hidden;
+    backdrop-filter: blur(3px);
+    margin-top: -130px;
+    transition: visibility 0.7s linear, margin-top 0.7s linear;
+  }
+}
+
+/* Additional CSS For Mobile Screen */
+
+@media only screen and (max-width: 767px) {
+  header,
+  section,
+  footer,
+  .container,
+  .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  img.banner-side {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  header,
+  section,
+  footer {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 20px !important;
+  }
+
+  .navbar-toggler {
+    border: 1px solid black !important;
+    color: black !important;
+    border-radius: 0 !important;
+  }
+
+  header button:focus:not(:focus-visible) {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .banner-home-inner-col {
+    padding-top: 30px;
+  }
+
+  section.banner-home .row > .col-lg-6 {
+    padding-bottom: 30px !important;
+  }
+
+  img.banner-side {
+    padding: 30px 20px;
+  }
+
+  section.production.bg-red.sec-padding {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  div#production,
+  div#measurement,
+  div#installation,
+  div#experience {
+    background-position: center;
+    text-align: center;
+  }
+
+  form.home-form {
+    flex-direction: column;
+  }
+
+  .home-form h1.h-black {
+    text-align: left;
+    font-size: 28px;
+    padding-bottom: 0;
+  }
+
+  section.home-form {
+    padding: 50px 20px;
+    padding-bottom: 0;
+  }
+
+  section.what-we-do .row {
+    gap: 0;
+    padding: 0;
+  }
+
+  section.what-we-do .img-sec {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    text-align: center;
+  }
+
+  section.what-we-do .box-1,
+  section.what-we-do .box-2 {
+    left: 42px;
+  }
+
+  section.who-we-are,
+  section.where-we-work {
+    padding: 0;
+  }
+
+  section.who-we-are .row {
+    padding: 0;
+  }
+
+  section.who-we-are .img-sec {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    text-align: center;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    position: static;
+  }
+
+  .box-2 {
+    margin-left: 0;
+  }
+
+  section.who-we-are .row {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+
+  section.what-we-do {
+    padding-bottom: 30px;
+  }
+
+  section.where-we-work .row {
+    padding: 0 !important;
+    gap: 0;
+    padding-top: 20px !important;
+  }
+
+  .box-3 {
+    margin-left: 0;
+  }
+
+  section.where-we-work .box-3 {
+    display: block;
+  }
+
+  section.where-we-work .img-sec {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    text-align: center;
+  }
+
+  .box-1 h6,
+  .box-2 h6,
+  .box-3 h6 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .img-inner {
+    width: 100px;
+    height: 45px;
+  }
+
+  section.best {
+    padding: 50px 0px;
+    padding-bottom: 0;
+  }
+
+  footer {
+    padding: 0 !important;
+  }
+
+  .footer-sec {
+    padding: 15px 20px;
+  }
+
+  /* Inner Pages */
+
+  section.banner-home.banner-installation.garage-repair {
+    height: 80vh !important;
+  }
+
+  section.banner-home.banner-installation.garage-repair {
+    padding: 0;
+  }
+
+  .inner-main-text {
+    font-size: 28px;
+  }
+
+  section.counter .counter-span-1 {
+    justify-content: center;
+  }
+
+  section.counter {
+    text-align: center;
+  }
+
+  #counter-sec .counter-span-3 {
+    font-weight: 900;
+  }
+
+  #counter-sec .counter-item {
+    padding-left: 0 !important;
+    justify-content: center;
+  }
+
+  #counter-sec .counting {
+    justify-content: center;
+  }
+
+  section.counter hr {
+    display: none;
+  }
+
+  section.counter .counter-span-1 {
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  section.services,
+  section.value {
+    padding: 50px 0px;
+    text-align: center;
+  }
+
+  section.service-repair {
+    height: 40vh !important;
+    background-size: cover;
+  }
+
+  section.banner-project {
+    height: 40vh !important;
+  }
+
+  .item-text {
+    font-size: 26px;
+  }
+
+  section.banner-contact {
+    height: 40vh !important;
+  }
+
+  .box-shadow {
+    width: 100%;
+  }
+
+  .form-column-contact form {
+    width: 100%;
+  }
+
+  section.blogs-banner {
+    height: 40vh !important;
+  }
+
+  section.banner-supply {
+    height: 40vh !important;
+  }
+
+  .homepage-for-desktop-btn {
+    display: none !important;
+  }
+
+  .homepage-for-mobile-btn {
+    display: block !important;
+  }
+
+  header .navbar-brand img {
+    width: 250px;
+  }
+
+  footer .down-footer .logo img {
+    width: 180px;
+  }
+
+  .homepage-for-mobile-btn {
+    display: inline;
+    width: 200px;
+    padding: 10px !IMPORTANT;
+  }
+  
+  a.btn.btn-regular {
+    background-color: #a50000;
+    border: 10px solid #a50000;
+  }
+  
+  h4.counter-numbers {
+    font-size: 50px;
+    }
+    
+  section.testimonial {
+    padding: 50px 20px;
+    margin-top: 50px;
+  }
+}

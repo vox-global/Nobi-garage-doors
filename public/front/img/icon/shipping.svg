@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
-  <g id="shipping" transform="translate(-371 -190)">
-    <path id="Icon_metro-airplane" data-name="Icon metro-airplane" d="M8.082,15.706l3.936-3.936L2.571,4.684,5.327,1.928l11.81,4.724,3.718-3.718c1.072-1.072,2.569-1.329,3.326-.571s.5,2.255-.571,3.326L19.892,9.408l4.725,11.811-2.756,2.756-7.087-9.449-3.936,3.936v5.511H8.082L6.7,19.84,2.571,18.462V15.706H8.082Z" transform="translate(382.43 202.072)" fill="#fff"/>
-    <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(371 190)" fill="none" stroke="#60d760" stroke-width="2">
-      <circle cx="25.5" cy="25.5" r="25.5" stroke="none"/>
-      <circle cx="25.5" cy="25.5" r="24.5" fill="none"/>
-    </g>
-  </g>
-</svg>

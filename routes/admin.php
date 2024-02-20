@@ -87,6 +87,21 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::get('homepage', 'homepage')->name('homepage');
         Route::post('homepage', 'homepage')->name('homepage');
 
+        Route::get('service-installation', 'serviceInstallation')->name('service-installation');
+        Route::post('service-installation', 'serviceInstallation')->name('service-installation');
+
+        Route::get('service-repair', 'serviceRepair')->name('service-repair');
+        Route::post('service-repair', 'serviceRepair')->name('service-repair');
+
+        Route::get('supply', 'supply')->name('supply');
+        Route::post('supply', 'supply')->name('supply');
+        
+        Route::get('projects', 'projects')->name('projects');
+        Route::post('projects', 'projects')->name('projects');
+        
+        Route::get('blogs', 'blogs')->name('blogs');
+        Route::post('blogs', 'blogs')->name('blogs');
+        
         Route::get('contact', 'contact')->name('contact');
         Route::post('contact', 'contact')->name('contact');
     });

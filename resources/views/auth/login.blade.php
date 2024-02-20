@@ -81,6 +81,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="{{ asset('admin/img/favicon.png') }}" type="image/x-icon">
     <title>Nobi Garage Doors - Login</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('/assets/css/app.css') }}">

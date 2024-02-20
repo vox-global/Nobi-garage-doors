@@ -178,6 +178,48 @@
                          </a>
                      </li>
                      <li>
+                         <a href="{{ route('content-service-installation') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             Service - Installation Page
+                         </a>
+                     </li>
+
+                     <li>
+                         <a href="{{ route('content-service-repair') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             Service - Repair Page
+                         </a>
+                     </li>
+
+                     <li>
+                         <a href="{{ route('content-supply') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             Supply Page
+                         </a>
+                     </li>
+                     <li>
+                         <a href="{{ route('content-projects') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             Projects Page
+                         </a>
+                     </li>
+                     <li>
+                         <a href="{{ route('content-blogs') }}">
+                             <span class="d-inline-block">
+                                 <i class="icon icon-list4"></i>
+                             </span>
+                             Blogs Page
+                         </a>
+                     </li>
+                     <li>
                          <a href="{{ route('content-contact') }}">
                              <span class="d-inline-block">
                                  <i class="icon icon-list4"></i>

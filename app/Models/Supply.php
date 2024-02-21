@@ -63,7 +63,7 @@ class Supply extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             // FIRST SECTION 
@@ -118,7 +118,7 @@ class Supply extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
 
@@ -150,7 +150,7 @@ class Supply extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
 
@@ -182,7 +182,7 @@ class Supply extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
             // THIRD SECTION
             [
@@ -231,11 +231,6 @@ class Supply extends Model
         ];
     }
 
-
-    public function getBannerImageAttribute($value)
-    {
-        return asset('storage/' . $value);
-    }
 
     public function getEIdAttribute()
     {

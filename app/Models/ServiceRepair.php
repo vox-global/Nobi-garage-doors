@@ -62,7 +62,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             // FIRST SECTION
@@ -158,16 +158,16 @@ class ServiceRepair extends Model
                 "html_params" => [],
             ],
             [
-                "element_type" => "input",
-                "input_type" => "text",
                 "label" => "Second Section Description",
+                "element_type" => "textarea",
                 "name" => "second_section_description",
-                "placeholder" => "Enter Second Section Description",
+                "editor" => 1,
+                "rows" => 5,
+                "placeholder" => "Please Enter Second Section Description",
                 "additional_ids" => [],
                 "additional_classes" => [],
                 "html_params" => [],
             ],
-
 
             // THIRD SECTION
 
@@ -267,7 +267,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
 
@@ -299,7 +299,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
 
@@ -331,7 +331,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             
@@ -512,7 +512,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             [
@@ -543,7 +543,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             [
@@ -574,7 +574,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             [
@@ -605,7 +605,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             // EIGHTH SECTION
@@ -653,7 +653,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
 
@@ -674,7 +674,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
 
@@ -695,7 +695,7 @@ class ServiceRepair extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
 
             [
@@ -723,10 +723,6 @@ class ServiceRepair extends Model
     }
 
 
-    public function getBannerImageAttribute($value)
-    {
-        return asset('storage/' . $value);
-    }
 
     public function getEIdAttribute()
     {

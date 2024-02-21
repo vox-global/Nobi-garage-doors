@@ -62,7 +62,7 @@ class Homepage extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
             // FIRST SECTION
             [
@@ -192,7 +192,7 @@ class Homepage extends Model
                 "label" => "Fourth Section Description",
                 "element_type" => "textarea",
                 "name" => "fourth_section_description",
-                "editor" => 0,
+                "editor" => 1,
                 "rows" => 5,
                 "placeholder" => "Please Enter Fourth Section Description",
                 "additional_ids" => [],
@@ -206,7 +206,7 @@ class Homepage extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
             // FIFTH SECTION
             [
@@ -237,7 +237,7 @@ class Homepage extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
             // Sixth SECTION
             [
@@ -268,7 +268,7 @@ class Homepage extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
             // SEVENTH SECTION
             [
@@ -387,22 +387,22 @@ class Homepage extends Model
     }
 
 
-    public function getBannerImageAttribute($value)
-    {
-        return asset('storage/'.$value);
-    }
-    public function getFourthSectionImageAttribute($value)
-    {
-        return asset('storage/'.$value);
-    }
-    public function getFifthSectionImageAttribute($value)
-    {
-        return asset('storage/'.$value);
-    }
-    public function getSixthSectionImageAttribute($value)
-    {
-        return asset('storage/'.$value);
-    }
+    // public function getBannerImageAttribute($value)
+    // {
+    //     return asset('storage/'.$value);
+    // }
+    // public function getFourthSectionImageAttribute($value)
+    // {
+    //     return asset('storage/'.$value);
+    // }
+    // public function getFifthSectionImageAttribute($value)
+    // {
+    //     return asset('storage/'.$value);
+    // }
+    // public function getSixthSectionImageAttribute($value)
+    // {
+    //     return asset('storage/'.$value);
+    // }
 
     public function getEIdAttribute()
     {

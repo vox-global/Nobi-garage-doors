@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Brands extends Model
+class AllProjects extends Model
 {
     use HasFactory;
-    protected $table = 'brands';
+    protected $table = 'all_projects';
     protected $guarded = ['id'];
     protected $appends = ['e_id'];
     protected $casts = [
@@ -23,6 +23,7 @@ class Brands extends Model
     public static function getValidationRules($id = "")
     {
         return [
+            'name' => 'required',
             'image' => [!$id ? 'required' : '', 'mimes:png,jpg,PNG,JPG,image/gif,gif,webp'],
         ];
     }

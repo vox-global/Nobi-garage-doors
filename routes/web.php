@@ -56,10 +56,11 @@ Route::controller(HtmlController::class)->group(function () {
     Route::get('services/repair', 'serviceRepair')->name('service-repair');
     Route::get('supply', 'supply')->name('supply');
     Route::get('projects', 'projects')->name('projects');
+    Route::get('project/{slug}', 'projectInner')->name('project-inner');
     Route::get('blogs', 'blogs')->name('blogs');
     Route::get('contact-us', 'contact')->name('contact');
 
-    
+
     Route::get('about', 'about')->name('about');
 });
 

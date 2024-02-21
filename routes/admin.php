@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\{
     SettingsController,
     RightsController,
     AdminController,
+    AllProjectsController,
     BlogCategoriesController,
     BrandsController,
     CategoriesController,
@@ -75,9 +76,13 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         include('general_routes.php');
     });
 
-
     // BRANDS MANAGEMENT
     Route::prefix('brands')->controller(BrandsController::class)->name('brands-')->group(function () {
+        include('general_routes.php');
+    });
+
+    // PROJECTS MANAGEMENT
+    Route::prefix('projects')->controller(AllProjectsController::class)->name('projects-')->group(function () {
         include('general_routes.php');
     });
 

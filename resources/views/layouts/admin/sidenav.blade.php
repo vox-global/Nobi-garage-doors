@@ -133,6 +133,34 @@
              </li>
 
              <li class="treeview">
+                <a href="#">
+                    <span class="d-inline-block">
+                        <i class="icon icon-change_history s-18"></i>
+                    </span>
+                    Projects Management
+                    <i class="icon icon-angle-left s-18 pull-right"></i>
+                </a>
+                <ul class="treeview-menu" style="display: none;">
+                    <li>
+                        <a href="{{ route('projects-view') }}">
+                            <span class="d-inline-block">
+                                <i class="icon icon-list4"></i>
+                            </span>
+                            All Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('projects-add') }}">
+                            <span class="d-inline-block">
+                                <i class="icon icon-add"></i>
+                            </span>
+                            Add Project
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+             <li class="treeview">
                  <a href="#">
                      <span class="d-inline-block">
                          <i class="icon icon-change_history s-18"></i>

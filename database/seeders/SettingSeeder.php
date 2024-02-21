@@ -34,6 +34,14 @@ class SettingSeeder extends Seeder
             'description' => ''
         ]);
         DB::table('settings')->insert([
+            'key' => 'Address',
+            'input_type' => 'text',
+            'title' => 'address',
+            'value' => 'Sydney New South Wales, Australia',
+            'group' => '',
+            'description' => ''
+        ]);
+        DB::table('settings')->insert([
             'key' => 'navbar_button_text',
             'input_type' => 'text',
             'title' => 'Navbar Button Text',
@@ -46,6 +54,14 @@ class SettingSeeder extends Seeder
             'input_type' => 'text',
             'title' => 'Footer Text',
             'value' => 'Nobi Garage Doors – Opening Doors to Style and Security',
+            'group' => '',
+            'description' => ''
+        ]);
+        DB::table('settings')->insert([
+            'key' => 'copyright_text',
+            'input_type' => 'text',
+            'title' => 'Copyright Text',
+            'value' => '© All Copyright 2024 Nobi Garage Doors.',
             'group' => '',
             'description' => ''
         ]);

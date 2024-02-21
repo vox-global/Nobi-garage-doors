@@ -4,15 +4,25 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Brands as MainModel;
+use App\Models\AllProjects as MainModel;
 use App\Http\Common\Helper;
 
-class BrandsController extends Controller
+class AllProjectsController extends Controller
 {
     public function __construct(array $attributes = array())
     {
 
         $input_elements = [
+            [
+                "element_type" => "input",
+                "input_type" => "text",
+                "label" => "Name",
+                "name" => "name",
+                "placeholder" => "Enter Name",
+                "additional_ids" => [],
+                "additional_classes" => [],
+                "html_params" => ["required" => "required"],
+            ],
             [
                 "element_type" => "image",
                 "label" => "Brand Image",
@@ -27,8 +37,8 @@ class BrandsController extends Controller
         $this->input_elements = $input_elements;
     }
 
-    public $folder_name = 'brands'; // For view routes and file calling and saving
-    public $module_name = 'Brands'; // For toast And page header
+    public $folder_name = 'projects'; // For view routes and file calling and saving
+    public $module_name = 'Projects'; // For toast And page header
     public $input_elements;
 
     public function view(Request $request)
@@ -54,7 +64,8 @@ class BrandsController extends Controller
         // $sequence = MainModel::count();
         // $sequence = $sequence + 1;
         $data = [
-            // 'name' => $request->name,
+            'name' => $request->name,
+            'slug' => \Str::slug($request->name),
             'status' => $request->status,
         ];
         if ($request->hasFile('image')) {

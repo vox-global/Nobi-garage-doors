@@ -60,7 +60,7 @@ class TestimonialsController extends Controller
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
         ];
 

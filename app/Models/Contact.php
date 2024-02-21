@@ -62,7 +62,7 @@ class Contact extends Model
                 "include_asset_function" => 0,
                 "additional_ids" => [],
                 "additional_classes" => [],
-                "html_params" => ['accept' => '.png,.jpg,.gif'],
+                "html_params" => ['accept' => '.png,.jpg,.gif,.webp'],
             ],
         ];
     }
@@ -79,10 +79,10 @@ class Contact extends Model
     }
 
 
-    public function getBannerImageAttribute($value)
-    {
-        return asset('storage/'.$value);
-    }
+    // public function getBannerImageAttribute($value)
+    // {
+    //     return asset('storage/'.$value);
+    // }
 
     public function getEIdAttribute()
     {

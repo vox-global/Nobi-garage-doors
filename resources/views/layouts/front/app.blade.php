@@ -147,6 +147,9 @@
 
 
 </head>
+@php
+    $settings = App\Models\Settings::getValues(['phone_number', 'Address', 'email', 'navbar_button_text', 'footer_text', 'copyright_text']);
+@endphp
 
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -165,7 +168,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="container">
                 <!-- Logo -->
-                <a class="navbar-brand" href="/"><img width="100%" height="100%"
+                <a class="navbar-brand" href="{{ route('home') }}"><img width="100%" height="100%"
                         src="{{ asset('front/images/logo.webp') }}" class="img-fluid logo" alt="Logo"></a>
 
                 <!-- Navbar Toggler -->
@@ -184,25 +187,26 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <a class="dropdown-item" href="garage-door-installation">GARAGE DOOR INSTALLATIONS</a>
+                                <a class="dropdown-item" href="{{ route('service-installation') }}">GARAGE DOOR
+                                    INSTALLATIONS</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="repair">REPAIR</a>
+                                <a class="dropdown-item" href="{{ route('service-repair') }}">REPAIR</a>
 
                             </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="supply">SUPPLY</a>
+                            <a class="nav-link" href="{{ route('supply') }}">SUPPLY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects">PROJECTS</a>
+                            <a class="nav-link" href="{{ route('projects') }}">PROJECTS</a>
                         </li>
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="blogs">BLOGS</a>
+                            <a class="nav-link" href="{{ route('blogs') }}">BLOGS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact-us">CONTACT US</a>
+                            <a class="nav-link" href="{{ route('contact') }}">CONTACT US</a>
                         </li>
                     </ul>
 
@@ -211,7 +215,8 @@
 
 
                 </div>
-                <a class="btn btn-regular nav" href="tel:0452234001">CALL NOW</a>
+                <a class="btn btn-regular nav"
+                    href="tel:{{ $settings['phone_number'] }}">{{ $settings['navbar_button_text'] }}</a>
             </div>
         </nav>
     </header>
@@ -229,30 +234,7 @@
         <!-- Start footer section -->
     </main>
     <footer>
-        <section class="map-sec">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d424141.69764626387!2d150.931975!3d-33.848244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW!5e0!3m2!1sen!2sau!4v1705525031118!5m2!1sen!2sau"
-                                width="650" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 msg-box">
-                        <div class="message">
-                            <h1 class="f-black pt-5 heading-value-inner-msg">Get in Touch</h1>
-                        </div>
-                        <p class="f-black py-4 p-value-msg">Feel free to reach out with any questions or if you'd like a
-                            quote for our garage door installation services. Drop us a message, and our friendly team
-                            will respond promptly. We're here to assist you!</p>
-                        <a href="contact-us" class="btn btn-regular product-btn">Contact Now</a>
-                    </div>
-                </div>
 
-            </div>
-        </section>
 
         <section class="down-footer">
             <div class="container">
@@ -261,20 +243,24 @@
                         <div class="footer-para">
                             <a class="logo" href="/"><img width="100%" height="100%"
                                     src="{{ asset('front/images/logo.webp') }}" alt="Logo"></a>
-                            <p class="py-5 w-300">Nobi Garage Doors – Opening Doors to Style and Security</p>
+                            <p class="py-5 w-300">{{ $settings['footer_text'] }}</p>
                             <ul class="social-icons flex align-center ">
 
                                 <li class="l-none flex pe-3"><a class="td-none f-white" href="#"><img
-                                            width="100%" height="100%" src="{{ asset('front/images/facebook-black.webp') }}"
+                                            width="100%" height="100%"
+                                            src="{{ asset('front/images/facebook-black.webp') }}"
                                             class="pe-2 social-img" alt="Nobi Garage Doors"></a></li>
                                 <li class="l-none flex pe-3"><a class="td-none f-white" href="#"><img
-                                            width="100%" height="100%" src="{{ asset('front/images/insta-black.webp') }}"
+                                            width="100%" height="100%"
+                                            src="{{ asset('front/images/insta-black.webp') }}"
                                             class="pe-2 social-img" alt="Nobi Garage Doors"></a></li>
                                 <li class="l-none flex pe-3"><a class="td-none f-white" href="#"><img
-                                            width="100%" height="100%" src="{{ asset('front/images/twitter-black.webp') }}"
+                                            width="100%" height="100%"
+                                            src="{{ asset('front/images/twitter-black.webp') }}"
                                             class="pe-2 social-img" alt="Nobi Garage Doors"></a></li>
                                 <li class="l-none flex pe-3"><a class="td-none f-white" href="#"><img
-                                            width="100%" height="100%" src="{{ asset('front/images/linkedin-black.webp') }}"
+                                            width="100%" height="100%"
+                                            src="{{ asset('front/images/linkedin-black.webp') }}"
                                             class="pe-2 social-img" alt="Nobi Garage Doors"></a></li>
                             </ul>
                         </div>
@@ -283,11 +269,14 @@
                         <hr>
                         <div class="links container">
                             <h4 class="f-red s-bold">Links</h4>
-                            <li class="l-none flex pt-3"><a class="td-none f-black" href="/">Home</a></li>
                             <li class="l-none flex pt-3"><a class="td-none f-black"
-                                    href="garage-door-installation">Services</a></li>
-                            <li class="l-none flex pt-3"><a class="td-none f-black" href="projects">Projects</a></li>
-                            <li class="l-none flex pt-3"><a class="td-none f-black" href="contact-us">Contact</a>
+                                    href="{{ route('home') }}">Home</a></li>
+                            <li class="l-none flex pt-3"><a class="td-none f-black"
+                                    href="{{ route('service-installation') }}">Services</a></li>
+                            <li class="l-none flex pt-3"><a class="td-none f-black"
+                                    href="{{ route('projects') }}">Projects</a></li>
+                            <li class="l-none flex pt-3"><a class="td-none f-black"
+                                    href="{{ route('contact') }}">Contact</a>
                             </li>
 
                         </div>
@@ -297,11 +286,12 @@
                         <div class="contact container">
                             <h4 class="f-red s-bold">Contact</h4>
                             <li class="l-none flex pt-3"><a class="td-none f-black"
-                                    href="tel:0452234001">0452234001</a></li>
-                            <li class="l-none flex pt-3"><a class="td-none f-black">Sydney New South Wales,
-                                    Australia</a></li>
+                                    href="tel:{{ $settings['phone_number'] }}">{{ $settings['phone_number'] }}</a>
+                            </li>
+                            <li class="l-none flex pt-3"><a class="td-none f-black">{{ $settings['Address'] }}</a>
+                            </li>
                             <li class="l-none flex pt-3"><a class="td-none f-black"
-                                    href="mailto:info@nobigaragedoors.com.au">info@nobigaragedoors.com.au</a></li>
+                                    href="mailto:{{ $settings['email'] }}">{{ $settings['email'] }}</a></li>
                             <!-- <li class="l-none flex pt-3"><a class="td-none f-black" href="#">Contact</a></li> -->
 
                         </div>
@@ -330,7 +320,7 @@
             </div>
             <!-- <hr class="copyright-hr"> -->
             <p class="copyright text-center py-2">
-                © All Copyright 2024 Nobi Garage Doors.</p>
+                {{ $settings['copyright_text'] }}</p>
             </div>
         </section>
 

@@ -301,13 +301,21 @@
                         <div class="newsletter container">
                             <h4 class="f-red s-bold">Newsletter</h4>
                             <!-- <p class="py-4 w-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-                            <form action="/" class="mt-4">
+                            <form action="{{ route('newsletter') }}" method="post" class="mt-4">
                                 <div class="email-input">
-                                    <input class="input-field" type="text" placeholder="YOUR EMAIL"
-                                        name="email">
+                                    <input class="input-field" type="email" placeholder="YOUR EMAIL"
+                                        name="email" required>
                                     <button type="submit"><img width="100%" height="100%" class="inp-img"
                                             src="{{ asset('front/images/icon.webp') }}"></img></button>
                                 </div>
+
+
+                                @error('email')
+                                    <div class="validation-error text-danger">{{ $message }}</div>
+                                @enderror
+                                @error('already_subscribed')
+                                    <div class="validation-error text-success">{{ $message }}</div>
+                                @enderror
                             </form>
 
                             <!-- <li class="l-none flex pt-3"><a class="td-none f-black" href="#">Contact</a></li> -->

@@ -3,9 +3,8 @@
 use Illuminate\Support\Facades\{Route};
 use App\Http\Common\{ResponseHelper};
 use App\Http\Controllers\Api\{AppointmentController};
-use App\Http\Controllers\Front\{HtmlController};
+use App\Http\Controllers\Front\{HtmlController, FormController};
 use App\Http\Controllers\Admin\User\{AuthController};
-
 use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +39,11 @@ Route::get('/', function () {
 })->name('coming_soon');
 
 
-Route::get('/sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap');
+Route::post('/newsletter', [App\Http\Controllers\NewsletterController::class, 'newsletter'])->name('newsletter');
+Route::post('/inquiry', [App\Http\Controllers\InquiryController::class, 'inquiry'])->name('inquiry');
+Route::post('/quotation', [App\Http\Controllers\QuotationRequestsController::class, 'quotation'])->name('quotation');
+
+
 
 Route::get('/dashboard', function () {
     return redirect()->route('admin.home');
@@ -59,12 +62,11 @@ Route::controller(HtmlController::class)->group(function () {
     Route::get('project/{slug}', 'projectInner')->name('project-inner');
     Route::get('blogs', 'blogs')->name('blogs');
     Route::get('contact-us', 'contact')->name('contact');
-
-
-    Route::get('about', 'about')->name('about');
 });
 
-
+Route::controller(FormController::class)->group(function () {
+    Route::post('quote', 'quote')->name('quote');
+});
 
 
 
@@ -74,7 +76,7 @@ Route::controller(HtmlController::class)->group(function () {
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::post('/newsletter', [App\Http\Controllers\NewsletterController::class, 'newsletter'])->name('newsletter');
+// Route::post('/newsletter', [App\Http\Controllers\NewsletterController::class, 'newsletter'])->name('newsletter');
 
 Route::get('/user-payment/{id}', [App\Http\Controllers\Api\PaymentController::class, 'redirect'])->name('user-payment');
 Route::get('/user-payment-response', [App\Http\Controllers\Api\PaymentController::class, 'paymentConfirmation'])->name('payment-confirmation');

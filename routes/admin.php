@@ -18,8 +18,9 @@ use App\Http\Controllers\Admin\{
 use App\Http\Controllers\Artist\{
     ArtworkController,
 };
-
-
+use App\Http\Controllers\InquiryController;
+use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\QuotationRequestsController;
 
 Route::middleware('auth')->prefix('admin')->group(function () {
 
@@ -70,7 +71,17 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::post('admin-user/edit/{id}', [AdminController::class, 'edit'])->name('admin_users-edit');
 
 
-
+    Route::prefix('newsletter')->controller(NewsletterController::class)->name('newsletter-')->group(function () {
+        include('general_routes.php');
+    });
+    
+    Route::prefix('inquiry')->controller(InquiryController::class)->name('inquiry-')->group(function () {
+        include('general_routes.php');
+    });
+    
+    Route::prefix('quotation')->controller(QuotationRequestsController::class)->name('quotation-')->group(function () {
+        include('general_routes.php');
+    });
     // TESTIMONIALS MANAGEMENT
     Route::prefix('testimonials')->controller(TestimonialsController::class)->name('testimonials-')->group(function () {
         include('general_routes.php');

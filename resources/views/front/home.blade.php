@@ -53,20 +53,37 @@
         <div class="container">
             <h1 class="form-h1">{{ $content->second_section_heading ?? '' }}</h1>
             <h2 class="form-h2">{{ $content->second_section_description ?? '' }}</h2>
-            <form class="home-form" method="POST" action="mail.php">
-                <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name*"
+            <form class="home-form" method="POST" action="{{ route('quotation') }}">
+                @csrf
+                <input type="text" name="first_name" class="form-control" id="firstname" placeholder="First Name*"
                     required>
-                <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name*" required>
+                @error('first_name')
+                    <div class="validation-error text-danger">{{ $message }}</div>
+                @enderror
+                <input type="text" name="last_name" class="form-control" id="lastname" placeholder="Last Name*"
+                    required>
+                @error('last_name')
+                    <div class="validation-error text-danger">{{ $message }}</div>
+                @enderror
                 <input type="email" name="email" class="form-control" id="email" placeholder="Email*" required>
-                <input type="tel" class="form-control" name="phonenumber" id="phone-number" placeholder="Phone Number*"
+                @error('email')
+                    <div class="validation-error text-danger">{{ $message }}</div>
+                @enderror
+                <input type="tel" class="form-control" name="phone" id="phone-number" placeholder="Phone Number*"
                     required>
-                <input type="text" name="propertyaddress" class="form-control" id="property-address"
+                @error('phone')
+                    <div class="validation-error text-danger">{{ $message }}</div>
+                @enderror
+                <input type="text" name="address" class="form-control" id="property-address"
                     placeholder="Property Address*" required>
+                @error('address')
+                    <div class="validation-error text-danger">{{ $message }}</div>
+                @enderror
                 <button type="submit" class="btn btn-nav-outer">Submit</button>
             </form>
-            {{-- <?php if ($_GET['submitted'] == 1) : ?>
-        <p class="th-alert">Thanks for getting in touch, your query will be answered shortly.</p>
-      <?php endif; ?> --}}
+            @error('quotation_requested')
+                <p class="th-alert">{{ $message }}</p>
+            @enderror
             <h1 class="h-black">
                 {{ $content->third_section_heading ?? '' }}
             </h1>

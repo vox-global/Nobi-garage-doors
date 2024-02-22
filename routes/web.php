@@ -104,3 +104,7 @@ Route::get('/payment/status', function (Request $req) {
 Route::get('/payment/notification', function (Request $req) {
     dd($req);
 });
+
+Route::get('/linkstorage', function () {
+    \Artisan::call('storage:link');
+});
